@@ -20,18 +20,18 @@ body {
 
 /* CSS Variables (Theme) */
 :root {
-    --primary-color: #00ADB5; /* Teal accent */
-    --secondary-color: #393E46; /* Darker Gray */
-    --bg-dark: #222831; /* Very Dark Blue/Gray */
-    --bg-light: #393E46; /* Slightly Lighter Gray for contrasting sections */
-    --text-light: #EEEEEE; /* Light Gray/White */
-    --text-dark: #222831;
+    --primary-color: #b94eb0; /* Teal accent */
+    --secondary-color: #ebb9f5; /* Darker Gray */
+    --bg-dark: #e4e9f0; /* Very Dark Blue/Gray */
+    --bg-light: #edf3fd; /* Slightly Lighter Gray for contrasting sections */
+    --text-light: #1b1818; /* Light Gray/White */
+    --text-dark: #dce3ee;
     --heading-font: 'Poppins', sans-serif;
     --body-font: 'Roboto', sans-serif;
     --container-width: 1140px;
     --header-height: 80px;
-    --card-bg: #393E46;
-    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    --card-bg: #e0e9f8;
+    --card-shadow: 0 4px 15px rgba(245, 181, 181, 0.2);
     --border-radius: 8px;
 }
 
@@ -91,7 +91,7 @@ a {
 }
 
 a:hover {
-    color: #007f85; /* Darker teal */
+    color: #b4d4d6; /* Darker teal */
 }
 
 ul {
@@ -125,10 +125,10 @@ img {
     border-color: var(--primary-color);
 }
 .btn-primary:hover {
-    background-color: #007f85;
-    border-color: #007f85;
+    background-color: #b95bdf;
+    border-color: #9f73b1;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 173, 181, 0.3);
+    box-shadow: 0 4px 10px rgba(168, 130, 190, 0.3);
 }
 
 .btn-secondary {
@@ -137,8 +137,8 @@ img {
     border-color: var(--secondary-color);
 }
 .btn-secondary:hover {
-    background-color: #4a515c;
-    border-color: #4a515c;
+    background-color: #dae2f0;
+    border-color: #b5c0d1;
     transform: translateY(-2px);
 }
 
@@ -164,7 +164,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(34, 40, 49, 0.9); /* Semi-transparent dark */
+    background-color: rgba(224, 232, 245, 0.9); /* Semi-transparent dark */
     backdrop-filter: blur(10px);
     height: var(--header-height);
     transition: background-color 0.3s ease;
@@ -235,48 +235,141 @@ img {
 }
 
 
-/* Hero Section */
-.hero-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(34, 40, 49, 0.8), rgba(34, 40, 49, 0.95)), url('https://via.placeholder.com/1920x1080?text=Background+Image') no-repeat center center/cover; /* Placeholder BG */
-    padding-top: var(--header-height); /* Offset for fixed header */
-    color: var(--text-light);
-}
 
-.hero-content h1 {
-    font-size: 3.5rem; /* 56px */
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    color: var(--text-light);
-}
-.hero-content .subtitle {
-    font-size: 1.5rem; /* 24px */
-    color: var(--primary-color);
-    font-family: var(--heading-font);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-.hero-content .location {
-    font-size: 1rem; /* 16px */
-    margin-bottom: 1.5rem;
-    opacity: 0.8;
-}
-.hero-content .tagline {
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    font-size: 1.1rem; /* 17.6px */
-    opacity: 0.9;
-}
-.hero-buttons {
-    margin-bottom: 2rem;
-}
-.hero-buttons .btn {
-    margin: 0 10px;
-}
+
+
+
+/* === Hero Section === */
+
+/* Define Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Keeps content block centered */
+      text-align: center;     /* Keeps text inside content block centered */
+      /* Ensure your variables --text-light, --primary-color, --heading-font, --header-height are defined elsewhere */
+      background: linear-gradient(rgba(239, 242, 248, 0.8), rgba(34, 40, 49, 0.95)), url('https://via.placeholder.com/1920x1080?text=Background+Image') no-repeat center center/cover; /* Placeholder BG */
+      padding: 6rem 1rem 2rem 1rem; /* Added padding top/bottom, kept side padding minimal */
+      /* padding-top: var(--header-height); NO LONGER NEEDED IF USING TOP/BOTTOM PADDING INSTEAD */
+      color: var(--text-light, #f8f9fa); /* Added fallback color */
+      overflow: hidden; /* Good practice for animations */
+  }
+  
+  /* NEW: Style for the profile image */
+  .hero-profile-image {
+      display: block; /* Needed for margin auto centering */
+      width: 150px;   /* Adjust size as needed - smaller */
+      height: 150px;  /* Same as width for circle */
+      border-radius: 50%; /* Makes it circular */
+      object-fit: cover;  /* Prevents image stretching */
+      margin: 0 auto 1.5rem auto; /* Centers horizontally, adds space below */
+      border: 4px solid var(--primary-color, #fff); /* Optional border, added fallback */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Optional subtle shadow */
+  }
+  
+  .hero-content h1 {
+      font-size: 3.5rem; /* 56px */
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      color: var(--text-light, #f8f9fa); /* Added fallback color */
+      /* ADDED: Animation */
+      animation: fadeInUp 0.8s 0.3s ease-out both; /* name duration delay timing-function fill-mode */
+  }
+  
+  .hero-content .subtitle {
+      font-size: 1.5rem; /* 24px */
+      color: var(--primary-color, #8b5cf6); /* Added fallback color */
+      font-family: var(--heading-font, sans-serif); /* Added fallback font */
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      min-height: 1.2em; /* Reserve space for Typed.js if used */
+  }
+  
+  .hero-content .location {
+      font-size: 1rem; /* 16px */
+      margin-bottom: 1.5rem;
+      opacity: 0.8;
+  }
+  
+  .hero-content .tagline {
+      max-width: 700px;
+      margin: 0 auto 2rem; /* Centers the paragraph itself */
+      font-size: 1.1rem; /* 17.6px */
+      opacity: 0.9;
+      line-height: 1.6; /* Improved readability */
+  }
+  
+  .hero-buttons {
+      margin-bottom: 2rem;
+  }
+  
+  .hero-buttons .btn {
+      margin: 0.5rem 0.5rem; /* Adjusted margin for better spacing on wrap */
+      /* Add specific button styling elsewhere or here */
+      /* Example: */
+      /* padding: 0.8rem 1.8rem; */
+      /* font-size: 1rem; */
+      /* border-radius: 50px; */
+      /* transition: background-color 0.3s ease, transform 0.2s ease; */
+  }
+  /* .hero-buttons .btn:hover {
+      transform: translateY(-2px);
+  } */
+  
+  /* Ensure hero content itself doesn't exceed viewport width unnecessarily */
+  .hero-content {
+      max-width: 1140px; /* Example max-width, adjust as needed */
+      padding: 0 15px; /* Add horizontal padding */
+      width: 100%;
+  }
+  
+  
+  @media (max-width: 768px) {
+      .hero-content h1 {
+          font-size: 2.8rem; 
+      }
+      .hero-content .subtitle {
+          font-size: 1.3rem;
+      }
+      .hero-profile-image {
+          width: 120px;
+          height: 120px;
+      }
+  }
+  
+  @media (max-width: 576px) {
+       .hero-content h1 {
+          font-size: 2.2rem; 
+      }
+      .hero-content .subtitle {
+          font-size: 1.1rem;
+      }
+       .hero-profile-image {
+          width: 100px;
+          height: 100px;
+      }
+      .hero-buttons .btn {
+           display: block; 
+           margin: 0.8rem auto; 
+           width: fit-content; 
+      }
+  }
+
+
+
+
 .social-links a {
     color: var(--text-light);
     font-size: 1.8rem; /* 28.8px */
@@ -702,3 +795,9 @@ img {
 
      .contact-info { margin-bottom: 2rem; }
 }
+
+.view-more-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
