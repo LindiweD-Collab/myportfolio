@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Mobile Menu Toggle
+    
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
 
-            // Toggle aria-expanded attribute
+            
             const isExpanded = navMenu.classList.contains('active');
             hamburger.setAttribute('aria-expanded', isExpanded);
         });
 
-        // Close menu when a link is clicked
+        
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 if (navMenu.classList.contains('active')) {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // Smooth Scrolling for internal links
+    
     const internalLinks = document.querySelectorAll('a[href^="#"]');
 
     internalLinks.forEach(link => {
@@ -37,8 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
+<<<<<<< HEAD
                 // Get header height to offset scroll position
                 const header = document.querySelector('.header'); // Ensure you have an element with class 'header' or adjust selector
+=======
+                
+                const header = document.querySelector('.header'); 
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
                 const headerHeight = header ? header.offsetHeight : 0;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
@@ -47,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
 
-                // Close mobile menu if open after clicking a link
+                
                  if (navMenu && navMenu.classList.contains('active')) {
                     hamburger.classList.remove('active');
                     navMenu.classList.remove('active');
@@ -57,8 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+<<<<<<< HEAD
     // Optional: Add subtle scroll animations (using Intersection Observer for general sections)
     const sections = document.querySelectorAll('.section-padding'); // Select sections to animate
+=======
+    
+    const sections = document.querySelectorAll('.section-padding'); 
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
 
     const observerOptions = {
         root: null, // relative to document viewport
@@ -71,8 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = 1;
                 entry.target.style.transform = 'translateY(0)';
-                // Optional: unobserve after animation to save resources
-                // observer.unobserve(entry.target);
+                
             }
         });
     };
@@ -80,7 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
     sections.forEach(section => {
+<<<<<<< HEAD
         // Initial state for animation (applied to general .section-padding elements)
+=======
+       
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
         section.style.opacity = 0;
         section.style.transform = 'translateY(30px)';
         section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
@@ -88,41 +101,63 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+<<<<<<< HEAD
     // Optional: Simple Form Validation Hint (visual only)
     const contactForm = document.querySelector('.contact-form'); // Ensure you have a form with this class
+=======
+    
+    const contactForm = document.querySelector('.contact-form'); 
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            // Basic check - HTML5 'required' does most of the work
+            
             const inputs = this.querySelectorAll('input[required], textarea[required]');
             let isValid = true;
             inputs.forEach(input => {
                 if (!input.value.trim()) {
                     isValid = false;
+<<<<<<< HEAD
                     // Visual feedback: red border
                     input.style.borderColor = 'red';
                 } else {
                     // Use CSS variable or default color for reset
+=======
+                    
+                    input.style.borderColor = 'red';
+                } else {
+                    
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
                      input.style.borderColor = 'var(--secondary-color, #ccc)'; 
                 }
             });
 
             if (!isValid) {
-                e.preventDefault(); // Prevent submission if fields are empty
+                e.preventDefault(); 
                 alert('Please fill in all required fields.');
             } else {
+<<<<<<< HEAD
                 // Handle form submission (e.g., Fetch API)
                 console.log('Form submitted (simulation)');
                 // alert('Message sent successfully! (Simulation)'); 
                 // Optionally reset form
                 // this.reset(); 
                 // e.preventDefault(); // Prevent default for demo/AJAX submission
+=======
+                
+                console.log('Form submitted (simulation)');
+                
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
             }
         });
 
-         // Reset border color on input
+         
         contactForm.querySelectorAll('input[required], textarea[required]').forEach(input => {
             input.addEventListener('input', () => {
+<<<<<<< HEAD
                 // Reset border if it was red and now has content
+=======
+              
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
                 if(input.style.borderColor === 'red' && input.value.trim()) {
                      input.style.borderColor = 'var(--secondary-color, #ccc)';
                 }
@@ -130,6 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+<<<<<<< HEAD
     // --- TYPED.JS INITIALIZATION ---
     // Check if the target element exists before initializing
     if (document.querySelector('.typing-text')) {
@@ -138,6 +174,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const typed = new Typed('.typing-text', {
                 strings: [
                     'Full Stack Developer', // Add your desired phrases
+=======
+    
+    if (document.querySelector('.typing-text')) {
+        
+        if (typeof Typed !== 'undefined') { 
+            const typed = new Typed('.typing-text', {
+                strings: [
+                    'Full Stack Developer', 
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
                     'Data Analyst',
                     'RPA Enthusiast' 
                 ],
@@ -152,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Typed.js library not loaded.');
         }
     }
+<<<<<<< HEAD
     // --- END OF TYPED.JS CODE ---
 
     // --- GSAP HERO SECTION ANIMATIONS ---
@@ -168,17 +214,39 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             opacity: 0, 
             scale: 0.8, // Example: scale in effect
+=======
+    
+
+    
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+
+       
+        gsap.from(".hero-image-wrapper", { 
+            scrollTrigger: { 
+                trigger: ".hero-section", 
+                toggleActions: "play none none none", 
+                start: "top 80%" 
+            },
+            opacity: 0, 
+            scale: 0.8, 
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
             duration: 1, 
             ease: 'power3.out' 
         });
 
+<<<<<<< HEAD
         // Timeline for hero text elements
+=======
+       
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
         const heroTextTimeline = gsap.timeline({
             scrollTrigger: { 
                 trigger: ".hero-section", 
                 toggleActions: "play none none none", 
                 start: "top 75%" // Start text animation slightly later
             },
+<<<<<<< HEAD
             defaults: { opacity: 0, y: 30, duration: 0.8, ease: 'power3.out' } // Default animation values
         });
 
@@ -190,10 +258,24 @@ document.addEventListener('DOMContentLoaded', () => {
             .from(".hero-text-content .tagline", {}, "-=0.7") 
             .from(".hero-buttons", {}, "-=0.6") // Animate buttons container
             .from(".social-links > *", { y: 20, stagger: 0.1 }, "-=0.6"); // Stagger animation for social icons/buttons
+=======
+            defaults: { opacity: 0, y: 30, duration: 0.8, ease: 'power3.out' } 
+        });
+
+        
+        heroTextTimeline
+            .from(".hero-text-content h1", { delay: 0.2 }) 
+            .from(".hero-text-content .subtitle", {}, "-=0.6") 
+            .from(".hero-text-content .location", {}, "-=0.7") 
+            .from(".hero-text-content .tagline", {}, "-=0.7") 
+            .from(".hero-buttons", {}, "-=0.6") r
+            .from(".social-links > *", { y: 20, stagger: 0.1 }, "-=0.6"); 
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
 
     } else {
         console.log("GSAP or ScrollTrigger not loaded - Hero animations skipped.");
     }
+<<<<<<< HEAD
     const projectsSlider = () => { // Wrap in function to avoid global scope issues
         const sliderWrapper = document.querySelector('.projects-slider-wrapper');
         const projectsGrid = document.querySelector('.projects-grid');
@@ -274,6 +356,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 }); // End DOMContentLoaded
+=======
+    
+
+
+}); 
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
 
 
 

@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -795,9 +794,12 @@ img {
 
      .contact-info { margin-bottom: 2rem; }
 }
+<<<<<<< HEAD
 
 .view-more-container {
     text-align: center;
     margin-top: 30px;
   }
   
+=======
+>>>>>>> 6ac0cc02ccb96a1e657d2693df4d21cc10b5f095
