@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Mobile Menu Toggle
+    
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
 
-            // Toggle aria-expanded attribute
+            
             const isExpanded = navMenu.classList.contains('active');
             hamburger.setAttribute('aria-expanded', isExpanded);
         });
 
-        // Close menu when a link is clicked
+        
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 if (navMenu.classList.contains('active')) {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // Smooth Scrolling for internal links
+    
     const internalLinks = document.querySelectorAll('a[href^="#"]');
 
     internalLinks.forEach(link => {
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                // Get header height to offset scroll position
-                const header = document.querySelector('.header');
+                
+                const header = document.querySelector('.header'); 
                 const headerHeight = header ? header.offsetHeight : 0;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
 
-                // Close mobile menu if open after clicking a link
+                
                  if (navMenu && navMenu.classList.contains('active')) {
                     hamburger.classList.remove('active');
                     navMenu.classList.remove('active');
@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Optional: Add subtle scroll animations (using Intersection Observer)
-    const sections = document.querySelectorAll('.section-padding'); // Select sections to animate
+    
+    const sections = document.querySelectorAll('.section-padding'); 
 
     const observerOptions = {
         root: null, // relative to document viewport
@@ -71,8 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = 1;
                 entry.target.style.transform = 'translateY(0)';
-                // Optional: unobserve after animation to save resources
-                // observer.unobserve(entry.target);
+                
             }
         });
     };
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
     sections.forEach(section => {
-        // Initial state for animation
+       
         section.style.opacity = 0;
         section.style.transform = 'translateY(30px)';
         section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
@@ -88,46 +87,111 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // Optional: Simple Form Validation Hint (visual only)
-    const contactForm = document.querySelector('.contact-form');
+    
+    const contactForm = document.querySelector('.contact-form'); 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            // Basic check - HTML5 'required' does most of the work
+            
             const inputs = this.querySelectorAll('input[required], textarea[required]');
             let isValid = true;
             inputs.forEach(input => {
                 if (!input.value.trim()) {
                     isValid = false;
-                    // You could add visual feedback here (e.g., red border)
+                    
                     input.style.borderColor = 'red';
                 } else {
-                     input.style.borderColor = 'var(--secondary-color)'; // Reset border
+                    
+                     input.style.borderColor = 'var(--secondary-color, #ccc)'; 
                 }
             });
 
             if (!isValid) {
-                e.preventDefault(); // Prevent submission if fields are empty
+                e.preventDefault(); 
                 alert('Please fill in all required fields.');
             } else {
-                // Here you would typically handle the form submission
-                // e.g., using Fetch API to send data to a backend or service
-                // For now, just log a message
+                
                 console.log('Form submitted (simulation)');
-                // alert('Message sent successfully! (Simulation)'); // Uncomment for user feedback
-                // Optionally reset form after submission
-                // this.reset();
-                // e.preventDefault(); // Prevent actual submission for demo
+                
             }
         });
 
-         // Reset border color on input
+         
         contactForm.querySelectorAll('input[required], textarea[required]').forEach(input => {
             input.addEventListener('input', () => {
+              
                 if(input.style.borderColor === 'red' && input.value.trim()) {
-                     input.style.borderColor = 'var(--secondary-color)';
+                     input.style.borderColor = 'var(--secondary-color, #ccc)';
                 }
             });
         });
     }
 
-}); // End DOMContentLoaded
+    
+    if (document.querySelector('.typing-text')) {
+        
+        if (typeof Typed !== 'undefined') { 
+            const typed = new Typed('.typing-text', {
+                strings: [
+                    'Full Stack Developer', 
+                    'Data Analyst',
+                    'RPA Enthusiast' 
+                ],
+                typeSpeed: 60, 
+                backSpeed: 40, 
+                loop: true,
+                backDelay: 2000, 
+                showCursor: true,
+                cursorChar: '|'
+            });
+        } else {
+            console.error('Typed.js library not loaded.');
+        }
+    }
+    
+
+    
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+
+       
+        gsap.from(".hero-image-wrapper", { 
+            scrollTrigger: { 
+                trigger: ".hero-section", 
+                toggleActions: "play none none none", 
+                start: "top 80%" 
+            },
+            opacity: 0, 
+            scale: 0.8, 
+            duration: 1, 
+            ease: 'power3.out' 
+        });
+
+       
+        const heroTextTimeline = gsap.timeline({
+            scrollTrigger: { 
+                trigger: ".hero-section", 
+                toggleActions: "play none none none", 
+                start: "top 75%" // Start text animation slightly later
+            },
+            defaults: { opacity: 0, y: 30, duration: 0.8, ease: 'power3.out' } 
+        });
+
+        
+        heroTextTimeline
+            .from(".hero-text-content h1", { delay: 0.2 }) 
+            .from(".hero-text-content .subtitle", {}, "-=0.6") 
+            .from(".hero-text-content .location", {}, "-=0.7") 
+            .from(".hero-text-content .tagline", {}, "-=0.7") 
+            .from(".hero-buttons", {}, "-=0.6") r
+            .from(".social-links > *", { y: 20, stagger: 0.1 }, "-=0.6"); 
+
+    } else {
+        console.log("GSAP or ScrollTrigger not loaded - Hero animations skipped.");
+    }
+    
+
+
+}); 
+
+
+
