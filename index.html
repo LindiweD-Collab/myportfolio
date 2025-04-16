@@ -37,13 +37,21 @@
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <section id="hero" class="hero-section snap-start">
             <div class="hero-content container">
-                <img src="img/sthombe2 (3).jpg" alt="Lindiwe Thabsile Dlomo" class="hero-profile-image"> 
+                <div class="image-container">
+                    <i class="fab fa-node-js tech-icon nodejs-icon"></i>
+                    <img src="img/sthombe2 (3).jpg" alt="Lindiwe Thabsile Dlomo" class="hero-profile-image">
+                    <i class="fab fa-js-square tech-icon javascript-icon"></i>
+                    <i class="fab fa-mongodb tech-icon mongodb-icon"></i>
+                    <i class="fab fa-vuejs tech-icon vuejs-icon"></i>
+                    <i class="fab fa-react tech-icon reactjs-icon"></i>
+                    <i class="fab fa-python tech-icon python-icon"></i>
+                    <i class="fas fa-database tech-icon database-icon"></i> </div>
                 <h1>Lindiwe Thabsile Dlomo</h1>
                 <p class="subtitle"> Full Stack Developer | Data Analyst | RPA Enthusiast</p>
                 <p class="location"><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</p>
-                <p class="tagline">Innovative developer passionate about leveraging Python and Robotic Process Automation to build efficient solutions and streamline workflows. Eager to learn, contribute to impactful projects, and grow within the tech industry.</p>
+                
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -51,8 +59,9 @@
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/lindiwe-dlomo-b50050b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/LindiweD-Collab" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                    <a href="https://wa.me/+27711398624" target="_blank" aria-label="WhatsApp">  
+                    <a href="https://wa.me/+27711398624" target="_blank" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
+                    </a>
                     <a href="https://1drv.ms/w/s!Agh2RhrFYW9CjeIKo6QlTG4T--1JGA?e=IPgTEH" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Resume"><i class="fas fa-file-alt"></i> Resume</a>
                 </div>
             </div>
@@ -60,180 +69,211 @@
 
         
 
-        <section id="about" class="about-section section-padding">
+        <section id="about" class="about-section section-padding snap-start">
             <div class="container grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div class="about-image">
                     <img src="img/thavby.jpg" alt="Lindiwe Thabsile Dlomo" class="profile-pic">
                 </div>
                 <div class="about-text">
                     <h2 class="section-title">About Me</h2>
-                    <p>Hi! I’m Lindiwe Thabsile Dlomo, an innovative <strong>Junior Software Developer</strong> based in Johannesburg, South Africa. I’m passionate about harnessing technology to solve real-world challenges and drive meaningful change.</p>
-                    <p>With hands-on experience in <strong>Python</strong> and <strong>Robotic Process Automation (RPA)</strong>, I thrive on developing efficient solutions and enhancing workflows through automation. My goal is always to make processes smarter and more streamlined. My curiosity and enthusiasm for learning fuel my journey in the tech world.</p>
-                    <p>I am currently expanding my foundational knowledge by pursuing a <strong>Bachelor of Science in Computer Science</strong> with IU International University of Applied Sciences.</p>
-                    <p>I’m excited to connect with like-minded individuals and contribute my skills to projects that make a difference. Let's build something amazing together!</p>
-                    <p>Feel free to explore my portfolio and reach out if you have any questions or opportunities for collaboration.</p>
+                    <pre><code class="language-javascript">
+        const <span class="keyword">name</span> = <span class="string">"Lindiwe Thabsile Dlomo"</span>;
+        const <span class="keyword">title</span> = <span class="string">"Junior Software Developer"</span>;
+        const <span class="keyword">location</span> = <span class="string">"Johannesburg, South Africa"</span>;
+        const <span class="keyword">passions</span> = [<span class="string">"Python"</span>, <span class="string">"RPA"</span>, <span class="string">"Problem Solving"</span>];
+        const <span class="keyword">learning</span> = <span class="string">"BSc in Computer Science"</span>;
+        
+        <span class="console">console</span>.<span class="log">log</span>(<span class="template-string">`Hi! I'm <span class="variable">${name}</span>, a passionate <span class="variable">${title}</span> based in <span class="variable">${location}</span>.`</span>);
+        <span class="console">console</span>.<span class="log">log</span>(<span class="template-string">`I enjoy working with <span class="variable">${passions.join(', ')}</span> to create efficient solutions.`</span>);
+        <span class="console">console</span>.<span class="log">log</span>(<span class="template-string">`Currently expanding my skills while pursuing a <span class="variable">${learning}</span>.`</span>);
+                    </code></pre>
                     <a href="https://1drv.ms/w/s!Agh2RhrFYW9CjeIKo6QlTG4T--1JGA?e=IPgTEH" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Resume"><i class="fas fa-file-alt"></i> Resume</a>
-
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="skills-section section-padding bg-light">
+        <section id="skills" class="skills-section section-padding bg-light snap-start">
             <div class="container">
                 <h2 class="section-title text-center">Technical Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Programming & Web</h3>
-                        <ul>
-                            <li>Python (Pandas, NumPy, Flask)</li>
-                            <li>HTML5, CSS3, JavaScript</li>
-                            <li>Web Development Fundamentals</li>
-                            <li>Version Control (Git, GitHub)</li>
-                            </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-robot"></i> Automation</h3>
-                        <ul>
-                            <li>Robotic Process Automation (RPA)</li>
-                            <li>UiPath</li>
-                            <li>Microsoft Power Automate</li>
+                        <h3><i class="fas fa-code animated-icon"></i> Programming & Web</h3>
+                        <ul class="icons-with-names">
+                            <li><i class="fab fa-java" title="Java" style="color: #f89820;"></i><span>Java</span></li>
+                            <li><i class="fab fa-python" title="Python" style="color: #3776ab;"></i><span>Python</span></li>
+                            <li><i class="fab fa-python" title="Pandas" style="color: #150458;"></i><span>Pandas</span></li>
+                            <li><i class="fab fa-python" title="NumPy" style="color: #013243;"></i><span>NumPy</span></li>
+                            <li><i class="fas fa-code" title="Flask" style="color: #6db33f;"></i><span>Flask</span></li>
+                            <li><i class="fab fa-html5" title="HTML5" style="color: #e34f26;"></i><span>HTML5</span></li>
+                            <li><i class="fab fa-css3-alt" title="CSS3" style="color: #1572b6;"></i><span>CSS3</span></li>
+                            <li><i class="fab fa-js-square" title="JavaScript" style="color: #f0db4f;"></i><span>JavaScript</span></li>
+                            <li><i class="fab fa-git-alt" title="Git" style="color: #f05032;"></i><span>Git</span></li>
+                            <li><i class="fab fa-github" title="GitHub" style="color: #24292e;"></i><span>GitHub</span></li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Data & Analysis</h3>
-                        <ul>
-                            <li>Data Analysis & Visualization</li>
-                            <li>SQL, R (Basic)</li>
-                            <li>Excel, Tableau</li>
+                        <h3><i class="fas fa-robot animated-icon"></i> Automation</h3>
+                        <ul class="icons-with-names">
+                            <li><i class="fas fa-robot" title="Robotic Process Automation (RPA)" style="color: #007bff;"></i><span>RPA</span></li>
+                            <li><i class="fas fa-desktop" title="UiPath" style="color: #29ABE2;"></i><span>UiPath</span></li>
+                            <li><i class="fab fa-microsoft" title="Microsoft Power Automate" style="color: #68217A;"></i><span>Power Automate</span></li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3><i class="fas fa-paint-brush"></i> Design & Cloud</h3>
-                        <ul>
-                            <li>UI/UX Design Principles</li>
-                            <li>AWS Cloud Basics (Containers)</li>
+                        <h3><i class="fas fa-database animated-icon"></i> Data & Analysis</h3>
+                        <ul class="icons-with-names">
+                            <li><i class="fas fa-chart-bar" title="Data Analysis & Visualization" style="color: #5cb85c;"></i><span>Data Analysis</span></li>
+                            <li><i class="fas fa-database" title="SQL" style="color: #007bff;"></i><span>SQL</span></li>
+                            <li><i class="fas fa-r" title="R (Basic)" style="color: #198ce7;"></i><span>R (Basic)</span></li>
+                            <li><i class="far fa-file-excel" title="Excel" style="color: #207346;"></i><span>Excel</span></li>
+                            <li><i class="fas fa-chart-pie" title="Tableau" style="color: #e97161;"></i><span>Tableau</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-paint-brush animated-icon"></i> Design & Cloud</h3>
+                        <ul class="icons-with-names">
+                            <li><i class="fas fa-vector-square" title="UI/UX Design Principles" style="color: #f9826c;"></i><span>UI/UX Design</span></li>
+                            <li><i class="fab fa-aws" title="AWS Cloud Basics (Containers)" style="color: #ff9900;"></i><span>AWS Cloud</span></li>
+                            <li><i class="fas fa-server" title="Containers" style="color: #6c757d;"></i><span>Containers</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-bug animated-icon"></i> Testing</h3>
+                        <ul class="icons-with-names">
+                            <li><i class="fas fa-check-square" title="Software Testing" style="color: #00c853;"></i><span>Software </span></li>
+                            <li><i class="fas fa-play" title="Unit Testing" style="color: #3f51b5;"></i><span>Unit Testing</span></li>
+                            <li><i class="fas fa-cogs" title="Integration Testing" style="color: #ffeb3b;"></i><span>Integration </span></li>
+                            <li><i class="fas fa-desktop" title="End-to-End Testing" style="color: #9c27b0;"></i><span>End-to-End </span></li>
+                            <li><i class="fas fa-user-check" title="User Acceptance Testing (UAT)" style="color: #03a9f4;"></i><span>UAT</span></li>
                         </ul>
                     </div>
                      <div class="skill-category">
-                        <h3><i class="fas fa-chart-line"></i> Other</h3>
-                        <ul>
-                            <li>SEO & Digital Marketing</li>
-                            <li>Problem Solving</li>
-                            <li>Continuous Learning</li>
+                        <h3><i class="fas fa-chart-line animated-icon"></i> Other</h3>
+                        <ul class="icons-with-names">
+                            <li><i class="fas fa-search" title="SEO & Digital Marketing" style="color: #64b5f6;"></i><span>SEO </span></li>
+                            <li><i class="fas fa-puzzle-piece" title="Problem Solving" style="color: #ffc107;"></i><span>Problem Solving</span></li>
+                            <li><i class="fas fa-graduation-cap" title="Continuous Learning" style="color: #4caf50;"></i><span>CI/CD</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects-section section-padding">
+
+        <section id="projects" class="projects-section section-padding snap-start">
             <div class="container">
                 <h2 class="section-title text-center">Portfolio Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="img/techy.png" alt="AI Face Recognition Project" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">FAQ Chatbot</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> Python</p>
-                            <div class="project-links">
-                                <a href="https://faq-chatbot-9nq1.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                <a href="https://github.com/LindiweD-Collab/faq-chatbot" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
+                <div class="projects-slider-container">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <img src="img/techy.png" alt="AI Face Recognition Project" class="project-image">
+                            <div class="project-info">
+                                <h3 class="project-title">FAQ Chatbot</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> Python</p>
+                                <div class="project-links">
+                                    <a href="https://faq-chatbot-9nq1.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
+                                    <a href="https://github.com/LindiweD-Collab/faq-chatbot" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="img/DM.JPG" alt="E-Commerce Store Project" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">Drum Machine</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Vite, TypeScript</p>
-                            <div class="project-links">
-                                <a href="https://fccdrum-machine.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                <a href="https://github.com/LindiweD-Collab/fccdrum-machin" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
+                        <div class="project-card">
+                            <img src="img/DM.JPG" alt="E-Commerce Store Project" class="project-image">
+                            <div class="project-info">
+                                <h3 class="project-title">Drum Machine</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Vite, TypeScript</p>
+                                <div class="project-links">
+                                    <a href="https://fccdrum-machine.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
+                                    <a href="https://github.com/LindiweD-Collab/fccdrum-machin" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="img/Capture.JPG" alt="RPA Workflow Project" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">Resume Builder</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                            <div class="project-links">
-                                 <a href="https://lindiwedlomo.github.io/Resume_Builder/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                   <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                 <a href="https://github.com/LindiweDlomo/Resume_Builder" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                   <i class="fab fa-github"></i> GitHub  </a>
+                        <div class="project-card">
+                            <img src="img/Capture.JPG" alt="RPA Workflow Project" class="project-image">
+                            <div class="project-info">
+                                <h3 class="project-title">Resume Builder</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                                <div class="project-links">
+                                     <a href="https://lindiwedlomo.github.io/Resume_Builder/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                       <i class="fas fa-external-link-alt"></i> Live Demo </a>
+                                     <a href="https://github.com/LindiweDlomo/Resume_Builder" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                       <i class="fab fa-github"></i> GitHub  </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/Screenshot from 2025-04-06 01-42-13.png" alt="AI Face Recognition Project" class="project-image">
+                            <div class="project-info">
+                                <h3 class="project-title">DataFlowX Pipeline</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> Python(Flask), HTML, CSS, JavaScript</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/LindiweD-Collab/DataFlowX-Data_Pipeline" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/eventA.png" alt="AI Face Recognition Project" class="project-image">
+                            <div class="project-info">
+                                <h3 class="project-title">EventData Studio(Event Data Analyzer)</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> Python(Flask), HTML, CSS, JavaScript</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/LindiweD-Collab/EventDataStudio" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/fr1.jpeg" alt="AI Face Recognition Project" class="project-image">
+                            <div class="project-info">
+
+                                <h3 class="project-title">AI Face Recognition</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> Python, OpenCV</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/LindiweD-Collab/face_recognition" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/e-cormm.JPG" alt="E-Commerce Store Project" class="project-image">
+                            <div class="project-info">
+
+                                <h3 class="project-title">E-Commerce Store</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                                <div class="project-links">
+                                    <a href="https://e-commerce-three-mu-25.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
+                                    <a href="https://github.com/LindiweD-Collab/E-commerce" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/todo.JPG" alt="TO-DO List Project" class="project-image">
+                            <div class="project-info">
+                                <h3 class="project-title">TO-DO List</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, React</p>
+                                <div class="project-links">
+                                    <a href="https://to-do-app-beryl-delta.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
+                                    <a href="https://github.com/LindiweD-Collab/to-do-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/vpn-use.JPG" alt="FAQ Chatbot" class="project-image">
+                            <div class="project-info">
+                                <h3 class="project-title">VPN</h3>
+                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Python (Flask)</p>
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
+                                    <a href="https://github.com/LindiweD-Collab/vpn--app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="img/Screenshot from 2025-04-06 01-42-13.png" alt="AI Face Recognition Project" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">DataFlowX Pipeline</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> Python(Flask), HTML, CSS, JavaScript</p>
-                            <div class="project-links">
-                                <a href="https://github.com/LindiweD-Collab/DataFlowX-Data_Pipeline" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="img/eventA.png" alt="AI Face Recognition Project" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">EventData Studio(Event Data Analyzer)</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> Python(Flask), HTML, CSS, JavaScript</p>
-                            <div class="project-links">
-                                <a href="https://github.com/LindiweD-Collab/EventDataStudio" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="img/fr1.jpeg" alt="AI Face Recognition Project" class="project-image">
-                        <div class="project-info">
-
-                            <h3 class="project-title">AI Face Recognition</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> Python, OpenCV</p>
-                            <div class="project-links">
-                                <a href="https://github.com/LindiweD-Collab/face_recognition" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="img/e-cormm.JPG" alt="E-Commerce Store Project" class="project-image">
-                        <div class="project-info">
-
-                            <h3 class="project-title">E-Commerce Store</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                            <div class="project-links">
-                                <a href="https://e-commerce-three-mu-25.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                <a href="https://github.com/LindiweD-Collab/E-commerce" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="img/todo.JPG" alt="TO-DO List Project" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">TO-DO List</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, React</p>
-                            <div class="project-links">
-                                <a href="https://to-do-app-beryl-delta.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                <a href="https://github.com/LindiweD-Collab/to-do-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="img/vpn-use.JPG" alt="FAQ Chatbot" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">VPN</h3>
-                            <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Python (Flask)</p>
-                            <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                <a href="https://github.com/LindiweD-Collab/vpn--app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                        </div>
+                    <div class="slider-navigation">
+                        <button class="slider-button prev-button"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-button next-button"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -243,7 +283,7 @@
                 </a>
               </div>
         </section>
-        <section id="experience" class="experience-section section-padding bg-light">
+        <section id="experience" class="experience-section section-padding bg-light snap-start">
             <div class="container">
                  <h2 class="section-title text-center">Professional Experience</h2>
                  <div class="experience-item">
@@ -257,7 +297,7 @@
                      </ul>
                  </div>
                 <div class="experience-item">
-                     <h3>AD Administrator/ SEO Specialist <span class="company">- ORT SA</span></h3>
+                     <h3>AD Administrator/ SEO Specialist, ORT SA <span class="company">- ORT SA</span></h3>
                      <p class="duration"><i class="fas fa-calendar-alt"></i> 17/01/2023 - 31/03/2024 | <i class="fas fa-map-marker-alt"></i> Johannesburg, SA</p>
                      <ul>
                          <li>Managed Active Directory objects including user accounts, groups, and permissions ensuring proper access control. </li>
@@ -279,7 +319,7 @@
                  </div>
         </section>
 
-        <section id="education" class="education-section section-padding">
+        <section id="education" class="education-section section-padding snap-start">
             <div class="container">
                 <h2 class="section-title text-center">Education & Certifications</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -310,14 +350,14 @@
                          </ul>
                     </div>
                 </div>
-                 <div class="references text-center mt-10">
-                     <h3 class="sub-section-title">References</h3>
-                     <p>Available upon request.</p>
-                 </div>
+                <div class="references text-center mt-10">
+                    <h3 class="sub-section-title">References</h3>
+                    <p class="reference-request">Available upon request.</p>
+                </div>
             </div>
         </section>
 
-         <section id="blog" class="blog-section section-padding bg-light">
+         <section id="blog" class="blog-section section-padding bg-light snap-start">
             <div class="container">
                 <h2 class="section-title text-center">Insights & Articles</h2>
                 <div class="blog-grid">
@@ -349,7 +389,7 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding">
+        <section id="contact" class="contact-section section-padding snap-start">
             <div class="container">
                 <h2 class="section-title text-center">Get In Touch</h2>
                 <div class="contact-content grid grid-cols-1 md:grid-cols-2 gap-10">
