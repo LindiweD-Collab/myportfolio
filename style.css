@@ -287,48 +287,25 @@ img {
 
 @keyframes fadeInUp {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-
-@keyframes orbitNodejs {
-    0% { transform: rotate(0deg) translateX(110px) rotate(0deg); } 
-    100% { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
 }
 
-@keyframes orbitJavascript {
-    0% { transform: rotate(0deg) translateY(-110px) rotate(0deg); } 
-    100% { transform: rotate(-360deg) translateY(-110px) rotate(360deg); }
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
 }
 
-@keyframes orbitMongodb {
-    0% { transform: rotate(0deg) translateX(-110px) rotate(0deg); } 
-    100% { transform: rotate(360deg) translateX(-110px) rotate(-360deg); }
-}
-
-@keyframes orbitVuejs {
-    0% { transform: rotate(0deg) translateY(110px) rotate(0deg); } 
-    100% { transform: rotate(-360deg) translateY(110px) rotate(360deg); }
-}
-
-@keyframes orbitReactjs {
-    0% { transform: rotate(0deg) translateX(130px) translateY(30px) rotate(0deg); } 
-    100% { transform: rotate(360deg) translateX(130px) translateY(30px) rotate(-360deg); }
-}
-
-@keyframes orbitPython {
-    0% { transform: rotate(0deg) translateX(-130px) translateY(-30px) rotate(0deg); } 
-    100% { transform: rotate(-360deg) translateX(-130px) translateY(-30px) rotate(360deg); }
-}
-
-@keyframes orbitDatabase {
-    0% { transform: rotate(0deg) translateX(0px) translateY(130px) rotate(0deg); } 
-    100% { transform: rotate(360deg) translateX(0px) translateY(130px) rotate(-360deg); }
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
 }
 
 .hero-section {
@@ -349,13 +326,13 @@ img {
     max-width: 1140px;
     padding: 0 15px;
     width: 100%;
-    position: relative; 
+    position: relative;
 }
 
 .image-container {
     position: relative;
-    width: 180px; 
-    height: 180px; 
+    width: 180px;
+    height: 180px;
     margin: 0 auto 1.5rem auto;
 }
 
@@ -366,72 +343,72 @@ img {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--primary-color, #fff);
-    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5); 
-    position: relative; 
-    z-index: 10; 
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5);
+    position: relative;
+    z-index: 10;
 }
 
 .tech-icon {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     position: absolute;
-    z-index: 15; 
-    transition: transform 0.3s ease-in-out;
+    z-index: 15;
+    transition: transform 0.3s ease-in-out; 
 }
 
 .nodejs-icon {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translateX(110px); 
-    color: #68a063; 
-    animation: orbitNodejs 6s linear infinite;
+    top: -5%; 
+    left: -5%; 
+    color: #68a063;
+    animation: pulse 2s ease-in-out infinite alternate; 
 }
 
 .javascript-icon {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translateY(-110px); 
-    color: #f0db4f; 
-    animation: orbitJavascript 5s linear infinite;
+    top: -1%; 
+    right: -5%; 
+    color: #f0db4f;
+    animation: float 3s ease-in-out infinite alternate; 
 }
 
 .mongodb-icon {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translateX(-110px); 
-    color: #47a248; 
-    animation: orbitMongodb 7s linear infinite reverse;
+    bottom: -5%; 
+    left: -5%; 
+    color: #47a248;
+    animation: pulse 2.5s ease-in-out infinite alternate; 
 }
 
 .vuejs-icon {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translateY(110px); 
-    color: #41b883; 
-    animation: orbitVuejs 5.5s linear infinite reverse;
+    bottom: -3%; 
+    right: -3%; 
+    color: #41b883;
+    animation: float 3.5s ease-in-out infinite alternate; 
 }
 
 .reactjs-icon {
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translateX(130px) translateY(30px); 
-    color: #61dafb; 
-    animation: orbitReactjs 6.5s linear infinite;
+    transform: translate(-50%, -50%); 
+    margin-left: 85px; 
+    margin-top: -40px; 
+    color: #61dafb;
+    animation: pulse 3s ease-in-out infinite alternate; 
 }
 
 .python-icon {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translateX(-130px) translateY(-30px); 
-    color: #3776ab; 
-    animation: orbitPython 7.5s linear infinite reverse;
+    left: 10%;
+    transform: translate(-50%, -50%); 
+    margin-right: 140px; 
+    margin-top: 50px; 
+    color: #3776ab;
+    animation: float 4s ease-in-out infinite alternate; 
 }
 
 .database-icon {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translateY(130px); 
-    color: #c6d8ff; 
-    animation: orbitDatabase 8s linear infinite;
+    bottom: -18px; 
+    left: 45%;
+    transform: translateX(-50%); 
+    color: #c6d8ff;
+    animation: pulse 3.5s ease-in-out infinite alternate; 
 }
 
 .hero-content h1 {
@@ -444,7 +421,7 @@ img {
 }
 
 .hero-content .subtitle {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: var(--primary-color, #8b5cf6);
     font-family: var(--heading-font, sans-serif);
     margin-bottom: 0.5rem;
@@ -494,25 +471,31 @@ img {
         font-size: 2rem;
     }
     .nodejs-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(90px); 
+        top: -8%; 
+        left: -8%; 
     }
     .javascript-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateY(-90px); 
+        top: -8%; 
+        right: -8%; 
     }
     .mongodb-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(-90px); 
+        bottom: -15%; 
+        left: -8%; 
     }
     .vuejs-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateY(90px); 
+        bottom: -8%; 
+        right: -8%; 
     }
     .reactjs-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(100px) translateY(40px); 
+        margin-left: 100px; 
+        margin-top: -30px; 
     }
     .python-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(-100px) translateY(-40px); 
+        margin-right: 120px; 
+        margin-top: 40px; /
     }
     .database-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateY(100px); 
+        bottom: -10px; 
     }
 }
 
@@ -531,37 +514,43 @@ img {
         font-size: 1.8rem;
     }
     .nodejs-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(70px); 
+        top: -10%; 
+        left: -10%; 
     }
     .javascript-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateY(-70px); 
+        top: -10%; 
+        right: -10%;
     }
     .mongodb-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(-70px); 
+        bottom: -10%; 
+        left: -10%; 
     }
     .vuejs-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateY(70px); 
+        bottom: -10%; 
+        right: -10%; 
     }
     .reactjs-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(80px) translateY(30px); 
+        margin-left: 70px; 
+        margin-top: -25px; 
     }
     .python-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(-80px) translateY(-30px); 
+        margin-right: 100px; 
+        margin-top: 25px; 
     }
     .database-icon {
-        transform: translate(-50%, -50%) rotate(0deg) translateY(80px); 
+        bottom: -5px; 
     }
     .hero-buttons .btn {
-         display: block;
-         margin: 0.8rem auto;
-         width: fit-content;
+          display: block;
+          margin: 0.8rem auto;
+          width: fit-content;
     }
 }
 
 
 .social-links a {
     color: var(--text-light);
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     margin: 0 15px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -570,10 +559,10 @@ img {
     transform: scale(1.1);
 }
 .social-links .btn-outline {
-    font-size: 1rem; 
+    font-size: 1rem;
     padding: 10px 20px;
     margin-left: 15px;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 .social-links .btn-outline i {
     margin-right: 8px;
@@ -582,15 +571,15 @@ img {
 
 /* About Section */
 .about-section {
-    background-color: var(--bg-light, #f9f9f9); /* Light background for light mode */
-    color: var(--text-dark, #333); /* Dark text for readability */
+    background-color: var(--bg-light, #f9f9f9); 
+    color: var(--text-dark, #333); 
 }
 .about-image img.profile-pic {
     border-radius: 50%;
     border: 5px solid var(--primary-color, #0d9488);
     max-width: 350px;
     margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(13, 148, 136, 0.2); /* Primary color shadow */
+    box-shadow: 0 10px 30px rgba(13, 148, 136, 0.2); 
 }
 .about-text h2 {
     text-align: left;
@@ -1181,5 +1170,4 @@ img {
     margin-top: 30px;
   }
   
-
 
