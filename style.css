@@ -20,9 +20,9 @@ body {
     scroll-behavior: smooth;
 }
 
-/* CSS Variables (Theme) */
+
 :root {
-    --primary-color: #a02cbd; 
+    --primary-color: #081025; 
     --secondary-color: #ebb9f5; 
     --bg-dark: #e4e9f0; 
     --bg-light: #edf3fd; 
@@ -37,7 +37,6 @@ body {
     --border-radius: 8px;
 }
 
-/* Container */
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
@@ -45,8 +44,6 @@ body {
 }
 
  
-
-/* Utility Classes */
 .section-padding {
     padding: 80px 0;
 }
@@ -68,7 +65,6 @@ body {
 .items-center { align-items: center; }
 
 
-/* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     font-weight: 600;
@@ -108,62 +104,98 @@ img {
     display: block;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 28px;
-    border-radius: var(--border-radius);
+    border-radius: 40px; 
     font-weight: 600;
     font-family: var(--heading-font);
-    text-transform: uppercase;
+    text-transform: uppercase; 
     letter-spacing: 0.5px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    font-size: 0.9rem; 
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, background-image 0.3s ease, background-position 0.3s ease, transform 0.2s ease;
+    border: 2px solid transparent; 
+    font-size: 0.9rem;
+    text-align: center; 
+     user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
+
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--text-dark);
-    border-color: var(--primary-color);
+    
+    color: #fff;
+    
+    background: linear-gradient(45deg, #f06, #3cf, #f06);
+    background-size: 250% auto; 
+    border: none; 
+    box-shadow: none;
+    transform: none;
 }
 .btn-primary:hover {
-    background-color: #b95bdf;
-    border-color: #9f73b1;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(168, 130, 190, 0.3);
+    background-position: right center; 
+    color: #fff; 
+    transform: scale(1.03);
+    border-color: transparent;
+    box-shadow: none;
+}
+.btn-primary:active {
+     transform: scale(0.97); 
+     background-image: linear-gradient(45deg, #e00055, #2ab8d9, #e00055); 
 }
 
+
+
 .btn-secondary {
-    background-color: var(--secondary-color);
-    color: var(--text-light);
-    border-color: var(--secondary-color);
+    background-color: rgb(7, 32, 41);
+    color: #fff; 
+    border: 1px solid #3cf; 
+    box-shadow: none;
+    transform: none;
 }
 .btn-secondary:hover {
-    background-color: #dae2f0;
-    border-color: #b5c0d1;
-    transform: translateY(-2px);
+    background-color: rgb(7, 36, 46); 
+    border-color: rgb(51, 175, 216); 
+    color: #fff; 
+     transform: scale(1.03);
+     box-shadow: none;
+}
+.btn-secondary:active {
+    transform: scale(0.97); 
+    background-color: rgb(11, 20, 63); 
+    border-color: rgb(22, 116, 147);
 }
 
 .btn-outline {
     background-color: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    color: rgb(6, 13, 49); 
+    border: 2px solid #3cf; 
+    box-shadow: none;
+    transform: none;
 }
 .btn-outline:hover {
-    background-color: var(--primary-color);
-    color: var(--text-dark);
+    background-color: rgb(16, 20, 43); 
+    color: #fff; 
+    border-color: #3cf;
+     transform: scale(1.03);
+     box-shadow: none;
 }
-
+.btn-outline:active {
+     transform: scale(0.97); 
+    background-color: rgb(5, 9, 31); 
+    border-color: rgb(51, 175, 216);
+    color: #fff;
+}
 
 .btn-sm {
     padding: 8px 18px;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
+    
 }
 
 
-/*references*/
 .references {
     background-color: var(--bg-light, #f9f9f9); 
     padding: 3rem 0; 
@@ -189,8 +221,6 @@ img {
     font-style: italic; 
 }
 
-/*  Added a subtle background pattern or overlay */
-
 .references::before {
     content: '';
     position: absolute;
@@ -205,7 +235,7 @@ img {
     position: relative; 
 }
 
-/* Header & Navigation */
+
 .header {
     position: fixed;
     top: 0;
@@ -228,7 +258,7 @@ img {
 
 .logo {
     font-family: var(--heading-font);
-    font-size: 1.8rem; /* 28.8px */
+    font-size: 1.8rem; 
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -266,7 +296,7 @@ img {
     width: 100%;
 }
 
-/* Hamburger Menu (Mobile) */
+
 .hamburger {
     display: none; 
     cursor: pointer;
@@ -315,7 +345,7 @@ img {
     justify-content: center;
     text-align: center;
 
-    background: linear-gradient(rgba(239, 242, 248, 0.8), rgba(34, 40, 49, 0.95)), url('https://via.placeholder.com/1920x1080?text=Background+Image') no-repeat center center/cover; /* Placeholder BG */
+    background: linear-gradient(rgba(239, 242, 248, 0.8), rgba(34, 40, 49, 0.95)), url('img/sthombe2 (3).jpg') no-repeat center center/cover; 
     padding: 6rem 1rem 2rem 1rem;
 
     color: var(--text-light, #f8f9fa);
@@ -1113,7 +1143,7 @@ img {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-     /* Adjust grids for mobile */
+     
     .skills-grid,
     .projects-grid,
     .blog-grid {
@@ -1143,8 +1173,8 @@ img {
     .hero-buttons .btn { width: 100%; }
 }
   .hero-buttons .btn-sm {
-    padding: 8px 12px;
-    font-size: 0.8rem; 
+    padding: 14px 26px;
+    font-size: 0.4rem; 
     width: 100%;
   }
   
@@ -1171,3 +1201,4 @@ img {
   }
   
 
+ 
