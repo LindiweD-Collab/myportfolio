@@ -2,481 +2,1062 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lindiwe Thabsile Dlomo - Junior Software Developer</title>
-    <meta name="description" content="Portfolio of Lindiwe Thabsile Dlomo, a Junior Software Developer specializing in Python and RPA, based in Johannesburg.">
+    <meta name="description" content="Lindiwe Dlomo - Innovative Full Stack Developer creating modern web experiences with React, Node.js, and cloud technologies. Explore my portfolio of cutting-edge projects.">
+    <title>Lindiwe T. Dlomo | Full Stack Developer | Data Analist</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="style.css">
+    <!-- Mobile responsiveness tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" as="font" crossorigin>
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/main.css">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#0f172a">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="loading-spinner">
+                <div class="spinner-sector spinner-sector-purple"></div>
+                <div class="spinner-sector spinner-sector-blue"></div>
+                <div class="spinner-sector spinner-sector-pink"></div>
+            </div>
+            <div class="preloader-text">Loading Innovation...</div>
+        </div>
+    </div>
 
-    <header class="header">
-        <nav class="navbar container">
-            <a href="#hero" class="logo">Lindiwe D.</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    
+    <div id="particles-js"></div>
+    
+    
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="logo-icon">LT</span>
+                <span class="logo-text">Lindiwe Thabsile Dlomo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero" class="hero-section snap-start">
-            <div class="hero-content container">
-                <div class="image-container">
-                    <i class="fab fa-node-js tech-icon nodejs-icon"></i>
-                    <img src="img/sthombe2 (3).jpg" alt="Lindiwe Thabsile Dlomo" class="hero-profile-image">
-                    <i class="fab fa-js-square tech-icon javascript-icon"></i>
-                    <i class="fab fa-mongodb tech-icon mongodb-icon"></i>
-                    <i class="fab fa-vuejs tech-icon vuejs-icon"></i>
-                    <i class="fab fa-react tech-icon reactjs-icon"></i>
-                    <i class="fab fa-python tech-icon python-icon"></i>
-                    <i class="fas fa-database tech-icon database-icon"></i>
-                </div>
-        
-                <h1>Lindiwe Thabsile Dlomo</h1>
-                <p class="subtitle"> Full Stack Developer | Data Analyst | RPA Enthusiast</p>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</p>
-        
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/lindiwe-dlomo-b50050b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/LindiweD-Collab" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                    <a href="https://wa.me/+27711398624" target="_blank" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://1drv.ms/w/s!Agh2RhrFYW9CjeIKo6QlTG4T--1JGA?e=IPgTEH" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Resume"><i class="fas fa-file-alt"></i> Resume</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="assets/resume.pdf" class="btn-resume" download="Lindiwe_Dlomo_Resume.pdf">
+                            Resume <i class="fas fa-download"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        
+        </div>
+    </nav>
 
-        <section id="about" class="about-section section-padding snap-start">
-            <div class="container grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="about-image">
-                    <img src="img/thavby.jpg" alt="Lindiwe Thabsile Dlomo" class="profile-pic">
-                </div>
-                <div class="about-text">
-                    <h2 class="section-title">About Me</h2>
-                    <pre><code class="language-javascript">
-        const <span class="keyword">name</span> = <span class="string">"Lindiwe Thabsile Dlomo"</span>;
-        const <span class="keyword">title</span> = <span class="string">"Junior Software Developer"</span>;
-        const <span class="keyword">location</span> = <span class="string">"Johannesburg, South Africa"</span>;
-        const <span class="keyword">passions</span> = [<span class="string">"Python"</span>, <span class="string">"RPA"</span>, <span class="string">"Problem Solving"</span>];
-        const <span class="keyword">learning</span> = <span class="string">"BSc in Computer Science"</span>;
-        
-        <span class="console">console</span>.<span class="log">log</span>(<span class="template-string">`Hi! I'm <span class="variable">${name}</span>, a passionate <span class="variable">${title}</span> based in <span class="variable">${location}</span>.`</span>);
-        <span class="console">console</span>.<span class="log">log</span>(<span class="template-string">`I enjoy working with <span class="variable">${passions.join(', ')}</span> to create efficient solutions.`</span>);
-        <span class="console">console</span>.<span class="log">log</span>(<span class="template-string">`Currently expanding my skills while pursuing a <span class="variable">${learning}</span>.`</span>);
-                    </code></pre>
-                    <a href="https://1drv.ms/w/s!Agh2RhrFYW9CjeIKo6QlTG4T--1JGA?e=IPgTEH" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Resume"><i class="fas fa-file-alt"></i> Resume</a>
-                </div>
-            </div>
-        </section>
 
-        <section id="skills" class="skills-section section-padding bg-light snap-start">
-            <div class="container">
-                <h2 class="section-title text-center">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code animated-icon"></i> Programming & Web</h3>
-                        <ul class="icons-with-names">
-                            <li><i class="fab fa-java" title="Java" style="color: #f89820;"></i><span>Java</span></li>
-                            <li><i class="fab fa-python" title="Python" style="color: #3776ab;"></i><span>Python</span></li>
-                            <li><i class="fab fa-python" title="Pandas" style="color: #150458;"></i><span>Pandas</span></li>
-                            <li><i class="fab fa-python" title="NumPy" style="color: #013243;"></i><span>NumPy</span></li>
-                            <li><i class="fas fa-code" title="Flask" style="color: #6db33f;"></i><span>Flask</span></li>
-                            <li><i class="fab fa-html5" title="HTML5" style="color: #e34f26;"></i><span>HTML5</span></li>
-                            <li><i class="fab fa-css3-alt" title="CSS3" style="color: #1572b6;"></i><span>CSS3</span></li>
-                            <li><i class="fab fa-js-square" title="JavaScript" style="color: #f0db4f;"></i><span>JavaScript</span></li>
-                            <li><i class="fab fa-git-alt" title="Git" style="color: #f05032;"></i><span>Git</span></li>
-                            <li><i class="fab fa-github" title="GitHub" style="color: #24292e;"></i><span>GitHub</span></li>
-                        </ul>
+<section id="hero" class="hero-section">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>Full Stack Developer | Data Analyst</span>
                     </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-robot animated-icon"></i> Automation</h3>
-                        <ul class="icons-with-names">
-                            <li><i class="fas fa-robot" title="Robotic Process Automation (RPA)" style="color: #007bff;"></i><span>RPA</span></li>
-                            <li><i class="fas fa-desktop" title="UiPath" style="color: #29ABE2;"></i><span>UiPath</span></li>
-                            <li><i class="fab fa-microsoft" title="Microsoft Power Automate" style="color: #68217A;"></i><span>Power Automate</span></li>
-                        </ul>
+                    <h1 class="hero-title">
+                        <span class="wave-emoji">👋</span> Hi, I'm <span class="text-gradient">Lindiwe Thabsile Dlomo</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        An innovative Junior Software Developer that <span class="typing-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        I'm based in Johannesburg, South Africa. I’m passionate about harnessing technology to solve real-world challenges and drive meaningful change.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" id="viewWorkBtn">
+                            View My Work <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="connectBtn">
+                            Let's Connect <i class="fas fa-paper-plane"></i>
+                        </a>
                     </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database animated-icon"></i> Data & Analysis</h3>
-                        <ul class="icons-with-names">
-                            <li><i class="fas fa-chart-bar" title="Data Analysis & Visualization" style="color: #5cb85c;"></i><span>Data Analysis</span></li>
-                            <li><i class="fas fa-database" title="SQL" style="color: #007bff;"></i><span>SQL</span></li>
-                            <li><i class="fas fa-r" title="R (Basic)" style="color: #198ce7;"></i><span>R (Basic)</span></li>
-                            <li><i class="far fa-file-excel" title="Excel" style="color: #207346;"></i><span>Excel</span></li>
-                            <li><i class="fas fa-chart-pie" title="Tableau" style="color: #e97161;"></i><span>Tableau</span></li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-paint-brush animated-icon"></i> Design & Cloud</h3>
-                        <ul class="icons-with-names">
-                            <li><i class="fas fa-vector-square" title="UI/UX Design Principles" style="color: #f9826c;"></i><span>UI/UX Design</span></li>
-                            <li><i class="fab fa-aws" title="AWS Cloud Basics (Containers)" style="color: #ff9900;"></i><span>AWS Cloud</span></li>
-                            <li><i class="fas fa-server" title="Containers" style="color: #6c757d;"></i><span>Containers</span></li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-bug animated-icon"></i> Testing</h3>
-                        <ul class="icons-with-names">
-                            <li><i class="fas fa-check-square" title="Software Testing" style="color: #00c853;"></i><span>Software </span></li>
-                            <li><i class="fas fa-play" title="Unit Testing" style="color: #3f51b5;"></i><span>Unit Testing</span></li>
-                            <li><i class="fas fa-cogs" title="Integration Testing" style="color: #ffeb3b;"></i><span>Integration </span></li>
-                            <li><i class="fas fa-desktop" title="End-to-End Testing" style="color: #9c27b0;"></i><span>End-to-End </span></li>
-                            <li><i class="fas fa-user-check" title="User Acceptance Testing (UAT)" style="color: #03a9f4;"></i><span>UAT</span></li>
-                        </ul>
-                    </div>
-                     <div class="skill-category">
-                        <h3><i class="fas fa-chart-line animated-icon"></i> Other</h3>
-                        <ul class="icons-with-names">
-                            <li><i class="fas fa-search" title="SEO & Digital Marketing" style="color: #64b5f6;"></i><span>SEO </span></li>
-                            <li><i class="fas fa-puzzle-piece" title="Problem Solving" style="color: #ffc107;"></i><span>Problem Solving</span></li>
-                            <li><i class="fas fa-graduation-cap" title="Continuous Learning" style="color: #4caf50;"></i><span>CI/CD</span></li>
-                        </ul>
+                    <div class="hero-social">
+                        <a href="https://github.com/LindiweD-Collab" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lindiwe-dlomo-b50050b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                       
+                        </a>
+                        <a href="https://wa.me/+27711398624" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <section id="projects" class="projects-section section-padding snap-start">
-            <div class="container">
-                <h2 class="section-title text-center">Portfolio Projects</h2>
-                <div class="projects-slider-container">
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <img src="img/techy.png" alt="FAQ Chatbot Project" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">FAQ Chatbot</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> Python</p>
-                                <div class="project-links">
-                                    <a href="https://faq-chatbot-9nq1.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                    <a href="https://github.com/LindiweD-Collab/faq-chatbot" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/techbridge.png" alt="Techbridge website" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">Techbridge website</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-                                <div class="project-links">
-                                    <a href="https://techbridge-seven.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                    <a href="https://github.com/LindiweD-Collab/techbridge" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/portfolio1.png" alt="Personal Protfolio" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">Personal Portfolio</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-                                <div class="project-links">
-                                    <a href="https://lindiwe-dlomo-p.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                    <a href="https://github.com/LindiweD-Collab/Lindiwes-Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/DM.JPG" alt="Drum Machine" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">Drum Machine</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Vite, TypeScript</p>
-                                <div class="project-links">
-                                    <a href="https://fccdrum-machine.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                    <a href="https://github.com/LindiweD-Collab/fccdrum-machine" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/Capture.JPG" alt="RPA Workflow Project" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">Resume Builder</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                                <div class="project-links">
-                                     <a href="https://lindiwedlomo.github.io/Resume_Builder/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                       <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                     <a href="https://github.com/LindiweDlomo/Resume_Builder" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                       <i class="fab fa-github"></i> GitHub  </a>
+            <div class="col-lg-6 position-relative">
+                <div class="hero-image-wrapper">
+                    <div class="profile-image-container">
+                        <img src="img/thavby.jpg" alt="Nicolette Mashaba" class="profile-image">
+                        <div class="profile-glow"></div>
+                        <div class="tech-icons">
+                            <!-- Your tech icons here -->
+                            <div class="tech-icons">
+                                <div class="icon react" data-tooltip="React">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                                </div>
+                                <div class="icon node" data-tooltip="Node.js">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                                </div>
+                                <div class="icon js" data-tooltip="JavaScript">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                </div>
+                                <div class="icon azure" data-tooltip="Azure">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                                </div>
+                                <div class="icon typescript" data-tooltip="TypeScript">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                                </div>
+                                <div class="icon mongodb" data-tooltip="MongoDB">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
                                 </div>
                             </div>
                         </div>
-                        <div class="project-card">
-                            <img src="img/todo.JPG" alt="TO-DO List Project" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">TO-DO List</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, React</p>
-                                <div class="project-links">
-                                    <a href="https://to-do-app-beryl-delta.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                    <a href="https://github.com/LindiweD-Collab/to-do-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <!-- Animated scroll indicator -->
+    <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+    </div>
+</section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-5 about-image-col">
+                    <div class="about-image-wrapper">
+                        <img src="img/thavby.jpg" alt="Nicolette Mashaba" class="about-image">
+                        <div class="about-image-bg"></div>
+                        <div class="about-experience">
+                            <div class="exp-number">2+</div>
+                            <div class="exp-text">Years of<br>Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 about-content">
+                    <h3>Who am I?</h3>
+                    <p>
+                        I'm Lindiwe Thabsile Dlomo, a passionate <strong>Full Stack Developer</strong> based in Johannesburg, South Africa. I’m passionate about harnessing technology to solve real-world challenges and drive meaningful change.
+                    </p>
+                    
+                    <div class="about-tabs">
+                        <ul class="nav nav-tabs" id="aboutTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" type="button">
+                                    <i class="fas fa-code"></i> Skills
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button">
+                                    <i class="fas fa-graduation-cap"></i> Education
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="hobbies-tab" data-bs-toggle="tab" data-bs-target="#hobbies-tab-pane" type="button">
+                                    <i class="fas fa-heart"></i> Interests
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="aboutTabsContent">
+                            <div class="tab-pane fade show active" id="skills-tab-pane" role="tabpanel">
+                                <div class="skills-list">
+                                    <div class="skill-item">
+                                        <div class="skill-name">Frontend Development</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 90%"></div>
+                                        </div>
                                     </div>
+                                    <div class="skill-item">
+                                        <div class="skill-name">Backend Development</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-name">UI/UX Design</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-name">Data Analysis</div>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 70%"></div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="education-tab-pane" role="tabpanel">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2025</div>
+                                        <div class="timeline-content">
+                                            <h4>Web Development Bootcamp</h4>
+                                            <p>Umuzi</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2024 - 2026(On Going)</div>
+                                        <div class="timeline-content">
+                                            <h4>NQF Level 7 (Bsc in Computer Science)</h4>
+                                            <p>International University of Applied Sciences</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2023 - 2024</div>
+                                        <div class="timeline-content">
+                                            <h4>Software Developer Internship(YES Certification)</h4>
+                                            <p>YES4Youth Program</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2021 -On going</div>
+                                        <div class="timeline-content">
+                                            <h4>Responsive Web Development</h4>
+                                            <p>Solo Learn/ FreeCodeCamp/ Udemy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hobbies-tab-pane" role="tabpanel">
+                                <div class="hobbies-grid">
+                                    <div class="hobby-item">
+                                        <i class="fas fa-laptop-code"></i>
+                                        <span>Coding</span>
+                                    </div>
+                                    <div class="hobby-item">
+                                        <i class="fas fa-book"></i>
+                                        <span>Reading</span>
+                                    </div>
+                                    <div class="hobby-item">
+                                        <i class="fas fa-music"></i>
+                                        <span>Music</span>
+                                    </div>
+                                    <div class="hobby-item">
+                                        <i class="fas fa-plane"></i>
+                                        <span>Travel</span>
+                                    </div>
+                                    <div class="hobby-item">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Drawing</span>
+                                    </div>
+                                    <div class="hobby-item">
+                                        <i class="fas fa-camera"></i>
+                                        <span>Photography</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary me-3">Hire Me</a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">What I'm great at</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="skills-tabs">
+            <ul class="nav nav-pills mb-5" id="skillsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="frontend-tab" data-bs-toggle="pill" data-bs-target="#frontend" type="button">
+                        <i class="fas fa-laptop-code"></i> Frontend
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="backend-tab" data-bs-toggle="pill" data-bs-target="#backend" type="button">
+                        <i class="fas fa-server"></i> Backend
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="frontend-tab" data-bs-toggle="pill" data-bs-target="#frontend" type="button">
+                        <i class="fa-solid fa-database"></i> Database
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="learning-tab" data-bs-toggle="pill" data-bs-target="#learning" type="button">
+                        <i class="fas fa-rocket"></i> Learning
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="skillsTabContent">
+                <!-- Frontend Skills -->
+                <div class="tab-pane fade show active" id="frontend" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>React.js</h4>
+                                    <p>Building interactive UIs with React hooks, context API, and Redux</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>JavaScript (ES6+)</h4>
+                                    <p>Modern JavaScript with functional programming concepts</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>TypeScript</h4>
+                                    <p>Type-safe JavaScript development for scalable applications</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Tailwind CSS</h4>
+                                    <p>Utility-first CSS framework for rapid UI development</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="tab-pane fade" id="backend" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Node.js</h4>
+                                    <p>Building scalable server-side applications with Express.js</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>MongoDB</h4>
+                                    <p>NoSQL database design and implementation</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>PostgreSQL</h4>
+                                    <p>Relational database management and query optimization</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>GraphQL</h4>
+                                    <p>Building efficient APIs with Apollo Server</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="tab-pane fade" id="tools" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Git & GitHub</h4>
+                                    <p>Version control and collaborative development</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Docker</h4>
+                                    <p>Containerization and deployment workflows</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Figma</h4>
+                                    <p>UI/UX design and prototyping</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>VS Code</h4>
+                                    <p>Primary code editor with extensive extensions</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Currently Learning -->
+                <div class="tab-pane fade" id="learning" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Google Cloud</h4>
+                                    <p>Google Data Engineer</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar learning" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Microsoft Azure</h4>
+                                    <p>Cloud infrastructure and services on Microsoft's platform</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar learning" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Kubernetes</h4>
+                                    <p>Container orchestration and deployment</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar learning" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Python</h4>
+                                    <p>Scripting and backend development</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar learning" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My recent work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="divider"></div>
+                <p class="section-description">
+                    Here are some of my recent projects. Each one was built to solve specific problems
+                    and showcase different aspects of my technical skills.
+                </p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="design">UI/UX</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="img/Capture.JPG" alt="Resume Builder">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Resume Builder</h3>
+                        <p>A comprehensive real estate platform with property listings, agent profiles, and advanced search functionality.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Mapbox</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="img/DM.JPG" alt="Drum Machine">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Drum Machine</h3>
+                        <p>Student collaboration platform with study groups, resource sharing, and event scheduling.</p>
+                        <div class="project-tech">
+                            <span>Vite.js</span>
+                            <span>Express</span>
+                            <span>JavaScript</span>
+                            <span>TailwindCSS</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="img/eventA.png" alt="Data Analyzer">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Analyzer</h3>
+                        <p>Interactive weather application with real-time data, forecasts, and location-based services.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Chart.js</span>
+                            <span>OpenWeather API</span>
+                            <span>Geolocation</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="img/techy.png" alt="FAQ ChatApp">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FAQ ChatApp</h3>
+                        <p>Custom design system with reusable components, animations, and responsive layouts.</p>
+                        <div class="project-tech">
+                            <span>Flask</span>
+                            <span>Storybook</span>
+                            <span>CSS Variables</span>
+                            <span>GSAP</span>
+                        </div>
+                        <a href="https://faq-chatbot-9nq1.onrender.com/" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="https://github.com/LindiweD-Collab" target="_blank" class="btn btn-primary">
+                    View More on GitHub <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My journey so far</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="timeline">
+               
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Web Developer Recruit</h3>
+                            <span class="timeline-company">Umuzi</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Actively participating in an intensive web development training program, acquiring practical skills in front-end and back-end technologies.</li>
+                            <li>Developing hands-on projects using HTML5, CSS3, JavaScript, and relevant frameworks/libraries</li>
+                            <li>Collaborating within an agile learning environment, engaging in code reviews and pair programming sessions.</li>
+                            <li>Building a strong foundation in modern web development principles, tools, and best practices/li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>HTML</span>
+                            <span>Node.js</span>
+                            <span>css</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2023 - May 2024</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Developer Intern</h3>
+                            <span class="timeline-company">SBV Services</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Contributed to software development projects, focusing on Python and RPA solutions.</li>
+                            <li>Developed and implemented automation scripts using UiPath/Power Automate to improve workflow efficiency.</li>
+                            <li>Collaborated with senior developers on testing, debugging, and feature implementation.</li>
+                            <li>Gained practical experience in software engineering principles within a corporate environment.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                            <span>RPA</span>
+                            <span>Java</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>SEO Special & AD Administrator</h3>
+                            <span class="timeline-company">ORT SA</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Managed Active Directory objects including user accounts, groups, and permissions ensuring proper access control.
+</li>
+                            <li>Performed Search Engine Optimization (SEO) analysis, keyword research, and implemented on-page/off-page strategies to improve website visibility.</li>
+                            <li>Monitored website performance and user engagement using web analytics tools (e.g., Google Analytics)</li>
+                            <li>Maintained logs and records of navigation activities</li>
+                            <li>Maintained documentation related to Active Directory administration and SEO activities.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Navigation</span>
+                            <span>SEO</span>
+                            <span>Team Leadership</span>
+                            <span>Active Directory Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What people say</span>
+                <h2 class="section-title">Client Testimonials</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="splide" id="testimonialSlider">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <!-- Testimonial 1 -->
+                        <div class="splide__slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p>
+                                        Lindiwe delivered an exceptional web application that exceeded our expectations. 
+                                        Her attention to detail and problem-solving skills were impressive. 
+                                        She communicated clearly throughout the project and delivered on time.
+                                    </p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <img src="img/tony.jpeg" alt="Client" class="author-image">
+                                    <div class="author-info">
+                                        <h4>Tony Broodryk</h4>
+                                        <span>Head: Information Technology Operations</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="project-card">
-                            <img src="img/code.png" alt="E-Commerce Store Project" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">Code Editor</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                                <div class="project-links">
-                                    <a href="https://leecode-editor.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                    <a href="https://github.com/LindiweD-Collab/Leecode-editor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                        <!-- Testimonial 2 -->
+                        <div class="splide__slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-left"></i>
                                     </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/Screenshot from 2025-04-06 01-42-13.png" alt="AI Face Recognition Project" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">DataFlowX Pipeline</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> Python(Flask), HTML, CSS, JavaScript</p>
-                                <div class="project-links">
-                                    <a href="https://github.com/LindiweD-Collab/DataFlowX-Data_Pipeline" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    <p>
+                                        Working with Lindiwe was a pleasure. She transformed our outdated website 
+                                        into a modern, user-friendly platform that has significantly increased our 
+                                        online engagement and conversions.
+                                    </p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <img src="img/kgomoto.jpeg" alt="Client" class="author-image">
+                                    <div class="author-info">
+                                        <h4>Kgomotso Mokwena</h4>
+                                        <span>Software Developer</span>
                                     </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/eventA.png" alt="AI Face Recognition Project" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">EventData Studio(Event Data Analyzer)</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> Python(Flask), HTML, CSS, JavaScript</p>
-                                <div class="project-links">
-                                    <a href="#" class="btn btn-sm btn-primary disabled" tabindex="-1" aria-disabled="true">
-                                        <i class="fas fa-external-link-alt"></i> Coming...</a>
-                                    <a href="https://github.com/LindiweD-Collab/EventDataStudio" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/fr1.jpeg" alt="AI Face Recognition Project" class="project-image">
-                            <div class="project-info">
-
-                                <h3 class="project-title">AI Face Recognition</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> Python, OpenCV</p>
-                                <div class="project-links">
-                                     <a href="#" class="btn btn-sm btn-primary disabled" tabindex="-1" aria-disabled="true">
-                                        <i class="fas fa-external-link-alt"></i> Coming...</a>
-                                    <a href="https://github.com/LindiweD-Collab/face_recognition" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                                   
                                 </div>
                             </div>
                         </div>
-                        <div class="project-card">
-                            <img src="img/e-cormm.JPG" alt="E-Commerce Store Project" class="project-image">
-                            <div class="project-info">
-
-                                <h3 class="project-title">E-Commerce Store</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                                <div class="project-links">
-                                    <a href="https://e-commerce-three-mu-25.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo </a>
-                                    <a href="https://github.com/LindiweD-Collab/E-commerce" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="splide__slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-left"></i>
                                     </div>
-                            </div>
-                        </div>
-                       
-                        <div class="project-card">
-                            <img src="img/vpn-use.JPG" alt="VPN" class="project-image">
-                            <div class="project-info">
-                                <h3 class="project-title">VPN</h3>
-                                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Python (Flask)</p>
-                                <div class="project-links">
-                                    <a href="#" class="btn btn-sm btn-primary disabled" tabindex="-1" aria-disabled="true">
-                                        <i class="fas fa-external-link-alt"></i> Coming...</a>
-                                    <a href="https://github.com/LindiweD-Collab/vpn--app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                    <p>
+                                        Lindiwe's technical expertise and creative approach solved complex 
+                                        challenges in our project. She was responsive to feedback and went above 
+                                        and beyond to ensure the final product met all requirements.
+                                    </p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <img src="img/sudhir.jpeg" alt="Client" class="author-image">
+                                    <div class="author-info">
+                                        <h4>Sudhir Maharaj</h4>
+                                        <span>Head of Technology Service Delivery, SBV South Africa</span>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slider-navigation">
-                        <button class="slider-button prev-button"><i class="fas fa-chevron-left"></i></button>
-                        <button class="slider-button next-button"><i class="fas fa-chevron-right"></i></button>
-                    </div>
                 </div>
             </div>
-            <div class="view-more-container">
-                <a href="https://github.com/LindiweD-Collab" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                  <i class="fas fa-external-link-alt"></i> View other projects
-                </a>
-              </div>
-        </section>
-        <section id="experience" class="experience-section section-padding bg-light snap-start">
-            <div class="container">
-                 <h2 class="section-title text-center">Professional Experience</h2>
-                 <div class="experience-item">
-                     <h3>Junior Software Developer <span class="company">- SBV Services </span></h3>
-                     <p class="duration"><i class="fas fa-calendar-alt"></i> 02/05/2023 - 31/04/2024 | <i class="fas fa-map-marker-alt"></i> Johannesburg, SA</p>
-                     <ul>
-                         <li>Contributed to software development projects, focusing on Python and RPA solutions.</li>
-                         <li>Developed and implemented automation scripts using UiPath/Power Automate to improve workflow efficiency.</li>
-                         <li>Collaborated with senior developers on testing, debugging, and feature implementation.</li>
-                         <li>Gained practical experience in software engineering principles within a corporate environment.</li>
-                     </ul>
-                 </div>
-                <div class="experience-item">
-                     <h3>AD Administrator/ SEO Specialist, ORT SA <span class="company">- ORT SA</span></h3>
-                     <p class="duration"><i class="fas fa-calendar-alt"></i> 17/01/2023 - 31/03/2024 | <i class="fas fa-map-marker-alt"></i> Johannesburg, SA</p>
-                     <ul>
-                         <li>Managed Active Directory objects including user accounts, groups, and permissions ensuring proper access control. </li>
-                         <li>Performed Search Engine Optimization (SEO) analysis, keyword research, and implemented on-page/off-page strategies to improve website visibility. </li>
-                         <li>Monitored website performance and user engagement using web analytics tools (e.g., Google Analytics)</li>
-                         <li>Maintained documentation related to Active Directory administration and SEO activities.</li>
-                     </ul>
-                 </div>
-                <div class="experience-item">
-                     <h3>Web Developer Recruit <span class="company">- Umuzi</span></h3>
-                     <p class="duration"><i class="fas fa-calendar-alt"></i> 02/09/2024 - Present | <i class="fas fa-map-marker-alt"></i> Johannesburg, SA</p>
-                     <ul>
-                         <li>Actively participating in an intensive web development training program, acquiring practical skills in front-end and back-end technologies. </li>
-                         <li>Developing hands-on projects using HTML5, CSS3, JavaScript, and relevant frameworks/libraries. </li>
-                         <li>Collaborating within an agile learning environment, engaging in code reviews and pair programming sessions.</li>
-                         <li>Building a strong foundation in modern web development principles, tools, and best practices</li>
-                     </ul>
-                 </div>
-                 </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education" class="education-section section-padding snap-start">
-            <div class="container">
-                <h2 class="section-title text-center">Education & Certifications</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div>
-                        <h3 class="sub-section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
-                        <div class="education-item">
-                            <h4>Bachelor of Science in Computer Science</h4>
-                            <p>IU International University of Applied Sciences</p>
-                            <p><em>Currently Enrolled (Year 1 of 3)</em></p>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="sub-section-title"><i class="fas fa-certificate"></i> Professional Certifications</h3>
-                        <ul class="certification-list">
-                            <li>Google Data Analytics <a href="certs/Coursera WHJ8W407PFO8.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                            <li>Google Business Intelligence <a href="certs/Coursera G43VHDDCE7G5 BI.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                            <li>Web Development Certificate <a href="certs/solo learn.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                            <li>SEO Specialist (ORT SA) <a href="#" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                            <li>Google Cloud Data Engineer Certificate <a href="certs/" target="_blank" rel="noopener noreferrer" class="cert-link">[Exam Scheduled]</a></li>
-                         </ul>
-                         <h3 class="sub-section-title mt-6"><i class="fas fa-laptop-code"></i> Job Simulations Completed</h3>
-                         <ul class="certification-list sim-list">
-                            <li>AWS Solutions Architect <a href="certs/AWS Solutions Architect Cert.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                            <li>Accenture Data Analyst <a href="certs/Data Analytics Accenture Cert.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                            <li>Standard Bank Software Engineering <a href="certs/standardbank.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                            <li>PwC Management Consulting <a href="certs/PwC_SimCert.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                            <li>Accenture Project Management <a href="certs/ProjectManagement_SimCert.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">[View]</a></li>
-                         </ul>
-                    </div>
-                </div>
-                <div class="references text-center mt-10">
-                    <h3 class="sub-section-title">References</h3>
-                    <p class="reference-request">Available upon request.</p>
-                </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="divider"></div>
+                <p class="section-description">
+                    Have a project in mind or want to discuss potential opportunities? 
+                    Feel free to reach out - I'd love to hear from you!
+                </p>
             </div>
-        </section>
-
-         <section id="blog" class="blog-section section-padding bg-light snap-start">
-            <div class="container">
-                <h2 class="section-title text-center">Insights & Articles</h2>
-                <div class="blog-grid">
-                    <article class="blog-post-card">
-                        <img src="img/google trend.jpg" alt="AI Trends" class="blog-post-image">
-                        <div class="blog-post-content">
-                            <h3 class="blog-post-title">Latest Trends in Artificial Intelligence</h3>
-                            <p>AI continues to advance rapidly, impacting various industries. Key trends include AI ethics, AI-driven automation...</p>
-                            <a href="https://www.q3tech.com/blogs/google-ai-innovations/" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            
+            <div class="row">
+                <div class="col-lg-5 contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                    </article>
-                    <article class="blog-post-card">
-                        <img src="img/R.jpeg" alt="Quantum Computing" class="blog-post-image">
-                        <div class="blog-post-content">
-                            <h3 class="blog-post-title">The Rise of Quantum Computing: What Does it Mean for the Future of Technology?</h3>
-                            <p>Quantum computing promises to revolutionize problem-solving. Recent strides include hardware advancements...</p>
-                            <a href="https://hackernoon.com/the-rise-of-quantum-computing-what-it-means-for-the-future#:~:text=by%20the%20writer.-,Quantum%20computing%20is%20projected%20to%20have%20a%20cumulative%20economic%20impact,to%20accomplish%20the%20same%20task." class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-                     <article class="blog-post-card">
-                         <img src="img/R (1).jpeg" alt="5G Technology" class="blog-post-image">
-                         <div class="blog-post-content">
-                            <h3 class="blog-post-title">5G Technology and Its Impact</h3>
-                            <p>The rollout of 5G transforms telecommunications with faster speeds and lower latency, enabling IoT, smart cities...</p>
-                            <a href="https://www.pwc.com/gx/en/about/contribution-to-debate/world-economic-forum/the-impact-of-5g.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section section-padding snap-start">
-            <div class="container">
-                <h2 class="section-title text-center">Get In Touch</h2>
-                <div class="contact-content grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div class="contact-info">
-                        <p>Interested in collaborating or have a question? Feel free to reach out!</p>
-                        <p>Connect with me via the form or through my professional channels:</p>
-                        <div class="contact-links">
-                             <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/lindiwe-dlomo-b50050b8/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-                             <p><i class="fab fa-github"></i> <a href="https://github.com/LindiweD-Collab" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                             <p><i class="fas fa-envelope"></i> <a href="mailto:lindiwe@linkedme.co.za">lindiwe@linkedme.co.za</a></p>
-                             <p><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</p>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:nene171408@gmail.com">lindiwe@linkedme.co.za</a>
                         </div>
                     </div>
-                    <form action= "mailto: lindiwe@linkedme.co.za" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Johannerburg, South Africa</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+1234567890">+27 76 109 7412</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/LindiweD-Collab" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lindiwe-dlomo-b50050b8/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            
+                            </a>
+                            <a href="https://wa.me/+27711398624" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 contact-form">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <div class="invalid-feedback">Please enter your name</div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <div class="invalid-feedback">Please enter a valid email</div>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                            <div class="invalid-feedback">Please enter a subject</div>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            <div class="invalid-feedback">Please enter your message</div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="footer bg-dark">
-        <div class="container text-center">
-            <p>&copy; 2025 Lindiwe Thabsile Dlomo. All Rights Reserved.</p>
         </div>
-    </footer>
-   
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
-    <script src="script.js"></script>
-</body>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">LT</a>
+                    <p>Innovative Full Stack Developer creating digital experiences that matter.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="assets/resume.pdf" download>Download Resume</a></li>
+                            <li><a href="https://github.com/LindiweD-Collab" target="_blank">GitHub</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/lindiwe-dlomo-b50050b8/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/reney_717" target="_blank">Instagram</a></li>
+                            <li><a href="https://github.com/LindiweD-Collab" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; <span id="year"></span> Lindiwe Thabsile Dlomo. All rights reserved.
+                </div>
+                <div class="footer-credits">
+                    Made with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> in South Africa
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+ <!-- JavaScript Libraries -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script src="src/main.js"></script>
+</body>
+</html>
